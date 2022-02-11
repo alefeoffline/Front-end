@@ -9,7 +9,7 @@
   </head>
 
   <body>
-    <form action="somewhere.html" method="get">
+    <form action="somewhere.html" method="get" enctype="multipart/form-data">
       <fieldset>
         <legend>LOGIN</legend>
         <div class="user-name">
@@ -60,6 +60,14 @@
         <div class="text">
           <label for="bio">Bio</label>
           <textarea name="bio" id="bio" cols="10" rows="5" placeholder="Adicional Info"></textarea>
+        </div>
+        <div class="file">
+          <label for="file">File</label>
+          <input type="file" name="file" id="file">
+        </div>
+        <div class="phone">
+          <label for="phone">Phone</label>
+          <input type="tel" name="phone" id="phone">
         </div>
         <div class="password">
           <label>Password
