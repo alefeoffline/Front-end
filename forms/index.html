@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forms</title>
+  </head>
+
+  <body>
+    <form action="somewhere.html" method="get">
+      <fieldset>
+        <legend>LOGIN</legend>
+        <div class="user-name">
+          <label for="user-name">Username</label>
+          <input type="text" name="user-name" id="user-name" placeholder="Username" required>
+        </div>
+        <div class="email">
+          <label for="email">Email</label>
+          <input type="email" name="email" id="email" placeholder="Email" required>
+        </div>
+        <div class="age">
+          <label for="age">Age</label>
+          <input type="number" name="age" id="age" placeholder="Age optional">
+        </div>
+        <div class="password">
+          <label>Password
+            <input type="password" name="password" placeholder="Password" required>
+          </label>
+        </div>
+        <button type="submit">Submit</button>
+        <button type="reset">Reset</button>
+      </fieldset>
+    </form>
+  </body>
+
+</html>
