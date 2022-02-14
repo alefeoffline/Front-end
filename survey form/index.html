@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Survey Form</title>
+    <style>
+
+    </style>
+  </head>
+
+  <body>
+    <h1 id="title">freeCodeCamp Survey Form</h1>
+    <p id="description">Thank you for taking the time to help us improve the platform</p>
+    <form id="survey-form">
+      <div class="name">
+        <label for="name-label" id="name-label">name</label>
+        <input type="text" name="name" id="name" placeholder="name" required>
+      </div>
+      <div class="email">
+        <label for="email-label" id="email-label">Email</label>
+        <input type="email" name="email" id="email" placeholder="Email" required>
+      </div>
+      <div class="age">
+        <label for="age">Age (optional)</label>
+        <input type="number" name="age" id="age" placeholder="Age" min="1" max="200" step="1">
+      </div>
+      <div class="number">
+        <label for="number-label" id="number-label">number</label>
+        <input type="number" name="number" id="number" placeholder="number" required min="1" max="99">
+      </div>
+      <div class="dropdown">
+        <label for="dropdown">Which option best describes your current role?</label>
+        <select name="dropdown" id="dropdown">
+          <option value="select" selected disabled>Select current role</option>
+          <option value="Student">Student</option>
+          <option value="full-job">Full time job</option>
+          <option value="full-student">Full time learner</option>
+          <option value="avoid">Prefer not to say</option>
+          <option value="other">Other</option>
+        </select>
+      </div>
+      <div class="radio">
+        <p>Would you recommend freeCodeCamp to a friend?</p>
+        <input type="radio" name="radio-name" id="radio-name1" value="recommend">
+        <label for="radio-name1">Definitely</label>
+        <input type="radio" name="radio-name" id="radio-name2" value="recommend">
+        <label for="radio-name2">Maybe</label>
+        <input type="radio" name="radio-name" id="radio-name3" value="recommend">
+        <label for="radio-name3">Not sure</label>
+      </div>
+      <div class="checkbox">
+        <label for="front-end">Front-end Projects</label>
+        <input type="checkbox" name="" id="" value="1">
+        <label for="back-end">Back-end Projects</label>
+        <input type="checkbox" name="" id="" value="2">
+        <label for="data-visual">Data Visualization</label>
+        <input type="checkbox" name="" id="" value="3">
+        <label for="challenges">Challenges</label>
+        <input type="checkbox" name="" id="" value="4">
+        <label for="open-source">Open Source Community</label>
+        <input type="checkbox" name="" id="" value="5">
+      </div>
+      <div class="textarea">
+        <p>Comments:</p>
+        <textarea name="comments" id="" cols="30" rows="10" placeholder="comment here!"></textarea>
+      </div>
+      <button type="submit" id="submit">Submit</button>
+    </form>
+    <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+
+  </body>
+
+</html>
