@@ -1,0 +1,82 @@
+body {
+  padding: 0;
+  margin: 0;
+  background: rgb(235, 235, 235);
+  min-height: 100vh;
+  font-family: sans-serif;
+  font-size: 1.2rem;
+}
+header {
+  display: flex;
+  justify-content: space-between;
+  position: fixed;
+  background: rgb(235, 235, 235);
+  top: 0;
+  width: 100%;
+}
+ul li {
+  display: inline-block;
+  padding: 0 60px;
+  list-style: none;
+}
+a {
+  text-decoration: none;
+  color: black;
+}
+img {
+  width: 30%;
+}
+.top {
+  display: flex;
+  flex-flow: column wrap;
+  margin: 40px 0;
+  align-items: center;
+  padding: 10px;
+}
+button {
+  background: yellow;
+  color: darkblue;
+  padding: 10;
+  border-radius: 5px;
+}
+.container {
+  display: flex;
+  flex-flow: column wrap;
+  align-items: center;
+  justify-content: center;
+  margin: 30px 0;
+}
+iframe {
+  margin: 40px 0;
+}
+.options {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  align-items: center;
+}
+.options div {
+  flex-flow: column nowrap;
+  align-items: center;
+  justify-content: center;
+  margin: 100px;
+  padding: 0;
+  border: 2px solid black;
+  flex: 0 1;
+}
+
+.options h3 {
+  text-align: center;
+  background: grey;
+  margin: 0;
+  padding: 20px;
+}
+.options button {
+  margin-left: 50px;
+}
+footer {
+  display: flex;
+  justify-content: flex-end;
+  background: lightgrey;
+  text-align: end;
+}
