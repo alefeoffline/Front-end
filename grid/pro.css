@@ -1,0 +1,72 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-size: 30px;
+}
+body {
+  background: linear-gradient(lightblue, darkblue);
+  height: 100vh;
+}
+/* Grid Container */
+.pro{
+  height: 90vh;
+  width: 90%;
+  margin: 20px auto;
+  display: grid;
+  gap: 20px;
+  grid-template-columns: repeat(12, 1fr);
+  grid-template-areas: 
+  ' header header header header header header header header header header header header'
+  ' blog blog blog blog blog blog blog blog blog blog blog blog'
+  ' main main main main main main main main main main main main'
+  ' side side side side side side side side side side side side'
+  ' footer footer footer footer footer footer footer footer footer footer footer footer';
+}
+/* Grid Child */
+[class^="box-"] {
+  display: grid;
+  place-items: center;
+  border: 5px rgb(196, 41, 41) solid;
+  padding: 10px;
+  border-radius: 20px;
+  color: white;
+}
+/* Grid Areas */
+.pro .box-1{   grid-area: header; }
+.pro .box-2{   grid-area: blog; }
+.pro .box-3{   grid-area: main; }
+.pro .box-4{   grid-area: side; }
+.pro .box-5{   grid-area: footer; }
+/* Media Querry */
+@media (min-width:700px){
+  .pro{
+    height: 90vh;
+    width: 90%;
+    margin: 20px auto;
+    display: grid;
+    gap: 20px;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-areas: 
+    ' header header header header   header header header header   header header header header'
+    ' blog blog blog blog   main main main main   main main main main'
+    ' blog blog blog blog   main main main main   main main main main'
+    ' side side side side   main main main main  main main main main'
+    ' side side side side   footer footer footer footer   footer footer footer footer';}
+}
+
+@media (min-width:1000px){
+  .pro{
+    height: 90vh;
+    width: 90%;
+    margin: 20px auto;
+    display: grid;
+    gap: 20px;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-areas: 
+    ' header header header header   header header header header   header header header header'
+    ' blog blog main main   main main main main   main main side side'
+    ' blog blog main main   main main main main   main main side side'
+    ' blog blog main main   main main main main  main main side side'
+    ' footer footer footer footer   footer footer footer footer   footer footer side side';}
+}
