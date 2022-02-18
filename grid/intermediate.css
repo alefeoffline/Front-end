@@ -1,0 +1,31 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-size: 30px;
+}
+body{
+  background: linear-gradient(lightblue, darkblue );
+  height: 100vh ;
+}
+[class ^= "box-"]{
+display: grid;
+place-items: center;
+border: 5px rgb(196, 41, 41) solid;
+padding: 10px;
+border-radius: 20px;
+color: white;
+}
+.intermediate{
+height: 90vh;
+width: 90%;
+margin: 20px auto;
+display: grid;
+gap: 20px;
+}
+@media (min-width: 760px){
+
+}
+@media(min-width: 1080px){
+
+}
