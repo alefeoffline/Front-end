@@ -1,13 +1,61 @@
 *,
 *::before,
 *::after {
+  padding: 0;
+  margin: 0;
   box-sizing: border-box;
   font-family: "Source Sans Pro", sans-serif;
 }
 
-root {
+:root {
   --dark-color: #1f2937;
   --header-color: #f9faf8;
   --text-color: #e5e7eb;
   --button-color: #3882f6;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  background-color: var(--dark-color);
+  color: var(--header-color);
+  width: 100%;
+}
+h3 {
+  font-size: 24px;
+  color: var(--header-color);
+  margin: 10px;
+}
+ul {
+  list-style-type: none;
+  display: flex;
+  margin: 10px;
+}
+a {
+  text-decoration: none;
+  color: var(--text-color);
+  margin: 10px;
+  font-size: 18px;
+}
+.hero {
+  display: flex;
+  background-color: var(--dark-color);
+  color: var(--header-color);
+  height: 400px;
+  margin: auto;
+}
+
+.hero p {
+  color: var(--text-color);
+  font-size: 18px;
+}
+
+.hero.image {
+  height: 200px;
+  width: 200px;
+}
+
+footer {
+  background-color: var(--dark-color);
+  color: var(--text-color);
 }
