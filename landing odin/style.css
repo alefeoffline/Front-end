@@ -24,11 +24,8 @@ nav {
   width: 100%;
 }
 
-h3 {
-  font-size: 24px;
-  color: var(--header-color);
+nav img {
   margin: 10px;
-  font-weight: bolder;
 }
 
 ul {
@@ -44,11 +41,10 @@ a {
   font-size: 18px;
 }
 
-a:hover {
+a:hover:not(.disabled) {
   background-color: var(--header-color);
   color: var(--dark-color);
   cursor: pointer;
-  border-radius: 10px;
 }
 
 /* HERO */
@@ -88,8 +84,8 @@ a:hover {
 }
 
 .hero-image {
-  height: 250px;
-  width: 450px;
+  height: 280px;
+  width: 480px;
 }
 
 /* SECTION */
@@ -102,7 +98,9 @@ section {
   display: flex;
   justify-content: center;
   align-items: center;
-  margin: 0;
+  margin: auto;
+  align-content: space-around;
+  justify-content: space-evenly;
 }
 .flex-item {
   margin-top: 50px;
