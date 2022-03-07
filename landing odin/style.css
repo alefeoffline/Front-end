@@ -2,5 +2,12 @@
 *::before,
 *::after {
   box-sizing: border-box;
+  font-family: "Source Sans Pro", sans-serif;
+}
 
-font-family: 'Source Sans Pro', sans-serif;
+root {
+  --dark-color: #1f2937;
+  --header-color: #f9faf8;
+  --text-color: #e5e7eb;
+  --button-color: #3882f6;
+}
