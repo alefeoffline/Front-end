@@ -4,7 +4,6 @@
 }
 .navigation {
   display: flex;
-  flex-flow: row wrap;
   justify-content: flex-end;
   list-style: none;
   margin: 0;
@@ -27,7 +26,6 @@
     justify-content: space-around;
   }
 }
-
 @media all and (max-width: 600px) {
   .navigation {
     flex-flow: column wrap;
@@ -44,9 +42,7 @@
   }
 }
 
-/* 
-2
- */
+/* Layout 2 */
 
 .wrapper {
   display: flex;
@@ -54,11 +50,12 @@
   font-weight: bold;
   text-align: center;
 }
-
 .wrapper > * {
   padding: 10px;
   flex: 1 100%;
 }
+
+
 .header {
   background: tomato;
 }
@@ -79,6 +76,8 @@
 .aside-2 {
   background: hotpink;
 }
+
+
 @media all and (min-width: 600px) {
   .aside {
     flex: 1;
