@@ -47,6 +47,8 @@ a {
 a:hover {
   background-color: var(--header-color);
   color: var(--dark-color);
+  cursor: pointer;
+  border-radius: 10px;
 }
 
 /* HERO */
@@ -77,6 +79,7 @@ a:hover {
   border-radius: 5px;
   border: none;
   margin-top: 15px;
+  cursor: pointer;
 }
 
 .btn:hover {
@@ -144,7 +147,7 @@ span {
   display: flex;
   background-color: var(--button-color);
   color: var(--header-color);
-  margin: 50px;
+  margin: 100px;
   height: 150px;
   padding: 50px;
   border-radius: 10px;
@@ -155,6 +158,7 @@ span {
   border-radius: 10px;
   border: 3px solid var(--text-color);
 }
+
 /* FOOTER */
 
 footer {
@@ -162,10 +166,6 @@ footer {
   color: var(--text-color);
   height: 80px;
   display: flex;
-}
-
-footer p {
   justify-content: center;
-  align-self: center;
-  justify-self: center;
+  align-items: center;
 }
