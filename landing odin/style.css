@@ -41,18 +41,31 @@ a {
   display: flex;
   background-color: var(--dark-color);
   color: var(--header-color);
-  height: 400px;
+  height: 500px;
   margin: auto;
+  padding: 100px;
 }
-
+.hero-content {
+  margin: 15px;
+}
 .hero p {
   color: var(--text-color);
   font-size: 18px;
 }
 
-.hero.image {
-  height: 200px;
-  width: 200px;
+.btn {
+  width: 100px;
+  padding: 5px;
+  color: var(--header-color);
+  background-color: var(--button-color);
+  border-radius: 5px;
+  border: none;
+  margin-top: 15px;
+}
+
+.hero-image {
+  height: 250px;
+  width: 450px;
 }
 
 footer {
