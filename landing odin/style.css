@@ -44,6 +44,11 @@ a {
   font-size: 18px;
 }
 
+a:hover {
+  background-color: var(--header-color);
+  color: var(--dark-color);
+}
+
 /* HERO */
 
 .hero {
@@ -72,6 +77,11 @@ a {
   border-radius: 5px;
   border: none;
   margin-top: 15px;
+}
+
+.btn:hover {
+  background-color: var(--text-color);
+  color: var(--button-color);
 }
 
 .hero-image {
@@ -127,9 +137,35 @@ span {
   font-size: 18px;
   padding-left: 900px;
 }
+
+/* CTA */
+
+.cta {
+  display: flex;
+  background-color: var(--button-color);
+  color: var(--header-color);
+  margin: 50px;
+  height: 150px;
+  padding: 50px;
+  border-radius: 10px;
+  justify-content: space-around;
+}
+
+.cta .btn {
+  border-radius: 10px;
+  border: 3px solid var(--text-color);
+}
 /* FOOTER */
 
 footer {
   background-color: var(--dark-color);
   color: var(--text-color);
+  height: 80px;
+  display: flex;
+}
+
+footer p {
+  justify-content: center;
+  align-self: center;
+  justify-self: center;
 }
